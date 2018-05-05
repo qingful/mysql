@@ -1,0 +1,11 @@
+[mysqld]
+
+# query log
+slow_query_log = on
+slow_query_log_file = /var/log/mysql/mysql-slow.log
+long_query_time = 1
+log_queries_not_using_indexes
+
+# bin log
+server-id = 1
+log_bin = /var/log/mysql/mysql-bin.log
